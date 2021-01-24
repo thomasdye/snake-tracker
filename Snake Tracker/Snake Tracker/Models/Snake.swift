@@ -12,6 +12,8 @@ struct Snake: Codable {
   var age: String
   var type: String
   var gender: String
+  var foodType: String
+  var foodSize: String
 }
 
 

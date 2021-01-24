@@ -17,7 +17,7 @@ class AddSnakeDetailViewController: UIViewController {
   
   var allSnakes: [Snake] = []
   var newSnakeGender: String = ""
-  var newSnake: Snake = Snake(name: "", age: "", type: "", gender: "")
+  var newSnake: Snake = Snake(name: "", age: "", type: "", gender: "", foodType: "", foodSize: "")
   
   override func viewDidLoad() {
         super.viewDidLoad()

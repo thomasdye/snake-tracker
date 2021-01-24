@@ -14,7 +14,7 @@ class SnakeDetailViewController: UIViewController {
   @IBOutlet weak var typeTextField: UITextField!
   @IBOutlet weak var genderSegmentedControl: UISegmentedControl!
   
-  var selectedSnake: Snake = Snake(name: "", age: "", type: "", gender: "")
+  var selectedSnake: Snake = Snake(name: "", age: "", type: "", gender: "", foodType: "", foodSize: "")
     override func viewDidLoad() {
         super.viewDidLoad()
       setSnakeDetails()
