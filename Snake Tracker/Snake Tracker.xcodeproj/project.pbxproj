@@ -14,7 +14,8 @@
 		EDB043AF25BD0802005AE69C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB043AD25BD0802005AE69C /* LaunchScreen.storyboard */; };
 		EDB043BA25BD0896005AE69C /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB043B925BD0896005AE69C /* Snake.swift */; };
 		EDB043BE25BD0948005AE69C /* SnakesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB043BD25BD0948005AE69C /* SnakesTableViewController.swift */; };
-		EDB043C125BD0958005AE69C /* SnakeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB043C025BD0958005AE69C /* SnakeDetailViewController.swift */; };
+		EDB043C125BD0958005AE69C /* AddSnakeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB043C025BD0958005AE69C /* AddSnakeDetailViewController.swift */; };
+		EDB043C625BD17FA005AE69C /* SnakeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB043C525BD17FA005AE69C /* SnakeDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,8 @@
 		EDB043B025BD0802005AE69C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDB043B925BD0896005AE69C /* Snake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snake.swift; sourceTree = "<group>"; };
 		EDB043BD25BD0948005AE69C /* SnakesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakesTableViewController.swift; sourceTree = "<group>"; };
-		EDB043C025BD0958005AE69C /* SnakeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeDetailViewController.swift; sourceTree = "<group>"; };
+		EDB043C025BD0958005AE69C /* AddSnakeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSnakeDetailViewController.swift; sourceTree = "<group>"; };
+		EDB043C525BD17FA005AE69C /* SnakeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				EDB043BD25BD0948005AE69C /* SnakesTableViewController.swift */,
-				EDB043C025BD0958005AE69C /* SnakeDetailViewController.swift */,
+				EDB043C025BD0958005AE69C /* AddSnakeDetailViewController.swift */,
+				EDB043C525BD17FA005AE69C /* SnakeDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -159,7 +162,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDB043C125BD0958005AE69C /* SnakeDetailViewController.swift in Sources */,
+				EDB043C625BD17FA005AE69C /* SnakeDetailViewController.swift in Sources */,
+				EDB043C125BD0958005AE69C /* AddSnakeDetailViewController.swift in Sources */,
 				EDB043BA25BD0896005AE69C /* Snake.swift in Sources */,
 				EDB043A325BD0801005AE69C /* AppDelegate.swift in Sources */,
 				EDB043A525BD0801005AE69C /* SceneDelegate.swift in Sources */,
