@@ -14,6 +14,7 @@
 		EDAF74932740349700CB0AFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDAF74912740349700CB0AFE /* LaunchScreen.storyboard */; };
 		EDAF749D2740352300CB0AFE /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF749C2740352300CB0AFE /* Snake.swift */; };
 		EDAF749F2740363400CB0AFE /* AddSnakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF749E2740363400CB0AFE /* AddSnakeViewController.swift */; };
+		EDAF74A1274038A800CB0AFE /* SnakesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF74A0274038A800CB0AFE /* SnakesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		EDAF74942740349700CB0AFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDAF749C2740352300CB0AFE /* Snake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snake.swift; sourceTree = "<group>"; };
 		EDAF749E2740363400CB0AFE /* AddSnakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSnakeViewController.swift; sourceTree = "<group>"; };
+		EDAF74A0274038A800CB0AFE /* SnakesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				EDAF749E2740363400CB0AFE /* AddSnakeViewController.swift */,
+				EDAF74A0274038A800CB0AFE /* SnakesTableViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				EDAF749F2740363400CB0AFE /* AddSnakeViewController.swift in Sources */,
 				EDAF74872740349500CB0AFE /* AppDelegate.swift in Sources */,
 				EDAF74892740349500CB0AFE /* SceneDelegate.swift in Sources */,
+				EDAF74A1274038A800CB0AFE /* SnakesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
