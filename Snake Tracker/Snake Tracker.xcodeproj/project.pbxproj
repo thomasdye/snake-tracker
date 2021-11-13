@@ -13,6 +13,7 @@
 		EDAF748E2740349500CB0AFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDAF748C2740349500CB0AFE /* Main.storyboard */; };
 		EDAF74902740349700CB0AFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDAF748F2740349700CB0AFE /* Assets.xcassets */; };
 		EDAF74932740349700CB0AFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDAF74912740349700CB0AFE /* LaunchScreen.storyboard */; };
+		EDAF749D2740352300CB0AFE /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF749C2740352300CB0AFE /* Snake.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EDAF748F2740349700CB0AFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDAF74922740349700CB0AFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDAF74942740349700CB0AFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDAF749C2740352300CB0AFE /* Snake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snake.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,8 @@
 		EDAF74852740349500CB0AFE /* Snake Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				EDAF749B2740350E00CB0AFE /* View Controller */,
+				EDAF749A2740350500CB0AFE /* Model */,
 				EDAF74862740349500CB0AFE /* AppDelegate.swift */,
 				EDAF74882740349500CB0AFE /* SceneDelegate.swift */,
 				EDAF748A2740349500CB0AFE /* ViewController.swift */,
@@ -65,6 +69,21 @@
 				EDAF74942740349700CB0AFE /* Info.plist */,
 			);
 			path = "Snake Tracker";
+			sourceTree = "<group>";
+		};
+		EDAF749A2740350500CB0AFE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDAF749C2740352300CB0AFE /* Snake.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EDAF749B2740350E00CB0AFE /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDAF749D2740352300CB0AFE /* Snake.swift in Sources */,
 				EDAF748B2740349500CB0AFE /* ViewController.swift in Sources */,
 				EDAF74872740349500CB0AFE /* AppDelegate.swift in Sources */,
 				EDAF74892740349500CB0AFE /* SceneDelegate.swift in Sources */,
