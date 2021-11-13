@@ -67,7 +67,7 @@ class AddSnakeViewController: UIViewController {
       
       let foodSize = foodSizeSegementedControl.selectedSegmentIndex + 1
       
-      newSnake = Snake(name: snakeName, morph: snakeMorph, age: snakeAge, feedingTimes: [Feed(type: "", date: lastFeedingDatePicker.date)], frozen: frozenBool, foodSize: foodSize)
+      newSnake = Snake(name: snakeName, morph: snakeMorph, age: snakeAge, feedingTimes: [Feed(type: Food(type: "", size: 1), date: lastFeedingDatePicker.date)], frozen: frozenBool, foodSize: foodSize)
       allSnakes.append(newSnake)
       do {
         let encoder = JSONEncoder()

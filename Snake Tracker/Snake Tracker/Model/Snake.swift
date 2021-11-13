@@ -19,6 +19,12 @@ struct Snake: Codable {
 }
 
 struct Feed: Codable {
-  let type: String
+  let type: Food
   let date: Date
 }
+
+struct Food: Codable {
+  let type: String
+  let size: Int
+}
+
