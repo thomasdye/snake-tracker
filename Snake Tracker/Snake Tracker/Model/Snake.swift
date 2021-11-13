@@ -13,7 +13,12 @@ struct Snake: Codable {
   let name: String
   let morph: String
   let age: Int
-  let feedingTimes: [Date]
+  let feedingTimes: [Feed]
   let frozen: Bool
   let foodSize: Int
+}
+
+struct Feed: Codable {
+  let type: String
+  let date: Date
 }
