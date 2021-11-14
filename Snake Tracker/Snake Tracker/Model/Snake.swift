@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 var allSnakes: [Snake] = []
 
@@ -16,6 +17,7 @@ struct Snake: Codable {
   let feedingTimes: [Feed]
   let frozen: Bool
   let foodSize: Int
+  let photo: 
 }
 
 struct Feed: Codable {

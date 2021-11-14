@@ -105,6 +105,15 @@
                                     <action selector="saveSnakeButtonTapped:" destination="FIr-rW-tlF" eventType="touchUpInside" id="qt3-mV-Vot"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ns5-br-pXH">
+                                <rect key="frame" x="162" y="773" width="92" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add Photo"/>
+                                <connections>
+                                    <action selector="addPhotoButtonTapped:" destination="FIr-rW-tlF" eventType="touchUpInside" id="bpD-X4-z2M"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9UI-xg-BzK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -118,6 +127,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Sy5-V7-IZo"/>
                     <connections>
+                        <outlet property="addPhotoButton" destination="Ns5-br-pXH" id="bh1-04-mAu"/>
                         <outlet property="ageTextField" destination="gmy-OW-elG" id="lUV-yO-2Zd"/>
                         <outlet property="foodSizeSegementedControl" destination="EDC-ZO-Ky9" id="fw5-VF-L4M"/>
                         <outlet property="frozenLiveSegmentedControl" destination="rlL-8J-J41" id="pil-ZM-LWG"/>
@@ -129,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gLr-wf-GHP" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="850.72463768115949" y="57.589285714285708"/>
+            <point key="canvasLocation" x="171" y="84"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="veK-AO-gq6">
@@ -140,12 +150,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="snakeIdentifier" id="3M7-ld-TZp">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="snakeIdentifier" textLabel="i9R-Il-UzA" detailTextLabel="DCQ-9x-ozX" style="IBUITableViewCellStyleSubtitle" id="3M7-ld-TZp">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3M7-ld-TZp" id="ZI3-xR-6Dh">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="384.5" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="i9R-Il-UzA">
+                                            <rect key="frame" x="20" y="6" width="25" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DCQ-9x-ozX">
+                                            <rect key="frame" x="20" y="22.5" width="40.5" height="13.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>

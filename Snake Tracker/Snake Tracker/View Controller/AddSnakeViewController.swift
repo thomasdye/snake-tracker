@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class AddSnakeViewController: UIViewController {
+class AddSnakeViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
   
   @IBOutlet weak var nameTextField: UITextField!
   @IBOutlet weak var morphTextField: UITextField!
@@ -17,12 +17,15 @@ class AddSnakeViewController: UIViewController {
   @IBOutlet weak var frozenLiveSegmentedControl: UISegmentedControl!
   @IBOutlet weak var foodSizeSegementedControl: UISegmentedControl!
   @IBOutlet weak var saveSnakeButton: UIButton!
+  @IBOutlet weak var addPhotoButton: UIButton!
   
   var newSnake: Snake = Snake(name: "", morph: "", age: 0, feedingTimes: [], frozen: false, foodSize: 0)
   let defaults = UserDefaults.standard
+  let imagePicker = UIImagePickerController()
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    imagePicker.delegate = self
     loadSnakesFromUserDefaults()
   }
   
@@ -91,6 +94,22 @@ class AddSnakeViewController: UIViewController {
         print("Unable to Decode Snakes")
       }
     }
+  }
+  
+  func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+      imageView.contentMode = .scaleAspectFit
+      imageView.image = pickedImage
+    }
+    
+    dismiss(animated: true, completion: nil)
+  }
+  
+  @IBAction func addPhotoButtonTapped(_ sender: UIButton) {
+    imagePicker.allowsEditing = false
+    imagePicker.sourceType = .photoLibrary
+    
+    present(imagePicker, animated: true, completion: nil)
   }
   
   @IBAction func saveSnakeButtonTapped(_ sender: UIButton) {

@@ -46,8 +46,8 @@ class SnakesTableViewController: UITableViewController {
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "snakeIdentifier", for: indexPath)
     
-    cell.textLabel?.text = allSnakes[indexPath.row].name
-    
+    cell.textLabel?.text = "\(allSnakes[indexPath.row].name)"
+    cell.detailTextLabel?.text = "\(allSnakes[indexPath.row].morph)"
     return cell
   }
   
